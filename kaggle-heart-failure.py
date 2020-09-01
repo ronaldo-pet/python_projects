@@ -1,7 +1,8 @@
 import pandas as pd
 
 pd.set_option('max_columns', None)
-df=pd.read_csv('/Volumes/Samsung_500gb/Coding/727551_1263738_bundle_archive.zip')
+url = 'https://archive.ics.uci.edu/ml/machine-learning-databases/00519/heart_failure_clinical_records_dataset.csv'
+df=pd.read_csv(url, header=0)
 df
 df.columns = df.columns.str.lower()
 ################################  2 X's features to try separately  ##########
